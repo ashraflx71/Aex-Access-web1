@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الإلكتروني – Aex Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🛍️ Aex Store</h1>
+                <p>تسوق بأفضل الأسعار</p>
+            </div>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>عروض حصرية لأحدث المنتجات</h2>
+            <p>توصيل سريع – ضمان الجودة – أسعار تنافسية</p>
+        </div>
+    </section>
+
+    <section class="products container">
+        <h2>منتجاتنا</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- المنتجات ستضاف بواسطة JavaScript -->
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>سلة التسوق</h3>
+            <button id="close-cart">✖</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-total">الإجمالي: <span id="cart-total">0</span> $</div>
+        <button id="checkout-btn" class="btn">إتمام الشراء</button>
+        <p class="demo-note">⚠️ هذا عرض توضيحي – لا يتم دفع أموال حقيقية</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Aex Store – جميع الحقوق محفوظة | تصميم وتطوير Aex Access</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
