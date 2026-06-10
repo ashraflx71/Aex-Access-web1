@@ -36,4 +36,4 @@
 - `project-templates/` – قوالب مشاريع جاهزة
 
 ## 📞 للتواصل201280208018
-[ضع هنا بريدك الإلكتروني أو رashtaflx71@gmail.com]
+ رashtaflx71@gmail.com]
