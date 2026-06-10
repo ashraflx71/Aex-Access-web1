@@ -3,53 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الإلكتروني – Aex Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aex Access | خدمات برمجية احترافية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #1e2a3a;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #1e2a3a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #1e2a3a;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        .templates {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .template-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .template-link {
+            background: #1e2a3a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+        }
+        footer {
+            background: #1e2a3a;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .contact {
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>🛍️ Aex Store</h1>
-                <p>تسوق بأفضل الأسعار</p>
-            </div>
-            <div class="cart-icon">
-                🛒 <span id="cart-count">0</span>
-            </div>
+            <h1>Ashraf Hassan | Aex Access</h1>
+            <p>حلول برمجية متكاملة – تطوير مواقع، متاجر إلكترونية، أنظمة مخصصة</p>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>عروض حصرية لأحدث المنتجات</h2>
-            <p>توصيل سريع – ضمان الجودة – أسعار تنافسية</p>
+    <div class="container">
+        <div class="services">
+            <div class="card">
+                <h3>🖥️ تطوير مواقع</h3>
+                <p>مواقع احترافية متجاوبة تعمل على جميع الأجهزة، بتصميم جذاب وسريع.</p>
+            </div>
+            <div class="card">
+                <h3>🛒 متاجر إلكترونية</h3>
+                <p>حلول متكاملة لبيع منتجاتك أونلاين مع تجربة مستخدم سلسة وأمان عالي.</p>
+            </div>
+            <div class="card">
+                <h3>🔧 دعم وصيانة</h3>
+                <p>خطط صيانة شهرية، تحديثات أمنية، ونسخ احتياطي لضمان استمرارية عملك.</p>
+            </div>
         </div>
-    </section>
 
-    <section class="products container">
-        <h2>منتجاتنا</h2>
-        <div class="product-grid" id="product-grid">
-            <!-- المنتجات ستضاف بواسطة JavaScript -->
+        <div class="templates">
+            <h2 style="text-align:center;">📁 معرض أعمالي وقوالب جاهزة</h2>
+            <div class="template-links">
+                <a href="project-templates/small-business/" class="template-link" target="_blank">🏢 قالب شركة صغيرة</a>
+                <a href="project-templates/ecommerce-store/" class="template-link" target="_blank">🛍️ قالب متجر إلكتروني</a>
+            </div>
+            <p style="text-align:center; margin-top:20px;">قوالب احترافية جاهزة للتخصيص – يمكن استخدامها في مشاريعك التجارية.</p>
         </div>
-    </section>
 
-    <div id="cart-sidebar" class="cart-sidebar">
-        <div class="cart-header">
-            <h3>سلة التسوق</h3>
-            <button id="close-cart">✖</button>
+        <div class="contact">
+            <h2>📞 تواصل معي</h2>
+            <p>بريد إلكتروني: ashraflx71@gmail.com</p>
+            <p>هاتف / واتساب: 201280208018</p>
+            <p>GitHub: <a href="https://github.com/ashraflx71" target="_blank">ashraflx71</a></p>
+            <a href="mailto:ashraflx71@gmail.com" class="btn">أرسل لي رسالة</a>
         </div>
-        <div id="cart-items"></div>
-        <div class="cart-total">الإجمالي: <span id="cart-total">0</span> $</div>
-        <button id="checkout-btn" class="btn">إتمام الشراء</button>
-        <p class="demo-note">⚠️ هذا عرض توضيحي – لا يتم دفع أموال حقيقية</p>
     </div>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Aex Store – جميع الحقوق محفوظة | تصميم وتطوير Aex Access</p>
-        </div>
+        <p>© 2025 Aex Access – جميع الحقوق محفوظة | تصميم وتطوير أشرف حسن</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
