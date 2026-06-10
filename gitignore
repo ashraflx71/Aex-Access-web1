@@ -1,0 +1,18 @@
+# حماية المفاتيح والبيانات
+.env
+*.key
+*.pem
+secrets.json
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# مجلدات التبعيات
+node_modules/
+vendor/
+
+# ملفات الأدوات المؤقتة
+*.log
+*.tmp
